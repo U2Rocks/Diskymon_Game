@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diskymon Tournament</title>
+    <link rel="stylesheet" href="style2.css">
+  </head>
+  <body style="text-align: center;">
+    <h1>Welcome to the Diskymon League!</h1>
+    <form id="my-form">
+        <h1>Enter Your Name and Choose a Disk</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Trainer Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="diskInput">Enter a Disk Number(1,2, or 3):</label>
+          <input type="text" id="diskInput">
+        </div>
+        <div>
+            <label for="TeamNum">Enter a Team Number(1 or 2)</label>
+            <input type="text" id="TeamNum">
+        </div>
+        <input class="btn" type="submit" value="Submit">
+      </form>
+
+      <h3>League Roster</h3>
+      <ul id="roster">
+      </ul>
+
+      <button class="btn" onclick="battleTime()">Time to Fight!</button>
+      <ul id="battleMessage">
+          <li style="visibility: hidden;">Hidden</li>
+      </ul>
+      <script src="diskymon.js"></script>
+  </body>
+</html>
